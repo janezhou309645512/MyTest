@@ -12,8 +12,8 @@ namespace MyTest
 {
     public partial class Form3 : Form
     {
-        private Form1 f2;
-        private From3 f3;
+        private Form1 f1;
+        private Form2 f2;
         private ImportExcel ie;
 
         public Form3()
@@ -31,11 +31,11 @@ namespace MyTest
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            f2 = new Form1();
+            f1 = new Form1();
 
             //下面的代码，说明：frm2是frm1的子窗体.注意，this的妙用  
-            f2.MdiParent = this;
-            f2.Show();
+            f1.MdiParent = this;
+            f1.Show();
 
 
 
@@ -43,29 +43,27 @@ namespace MyTest
 
         private void 人员信息ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            f3 = new From3();
-            f3.MdiParent = this;
-            f2.Hide();
-            f3.Show();
+            f2 = new Form2();
+            f2.MdiParent = this;
+            f1.Hide();
+            f2.Show();
         }
 
         private void 机台信息ToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            f2 = new Form1();
+            f1 = new Form1();
             //下面的代码，说明：frm2是frm1的子窗体.注意，this的妙用  
-            f2.MdiParent = this;
+            f1.MdiParent = this;
             f2.Show();
         }
 
         private void 标签打印ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ie = new ImportExcel();
-            ie.MdiParent = this;
-           
-            ie.Show();
-
-
+            f2 = new Form2();
+            f2.MdiParent = this;
+            f1.Hide();
+            f2.Show();
 
 
         }
