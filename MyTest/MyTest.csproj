@@ -90,6 +90,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\Base.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Base.Designer.cs">
+      <DependentUpon>Base.cs</DependentUpon>
+    </Compile>
     <Compile Include="Common\LableTag.cs" />
     <Compile Include="Dgc.cs">
       <SubType>Form</SubType>
@@ -140,6 +146,9 @@
     <Compile Include="Update.Designer.cs">
       <DependentUpon>Update.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Common\Base.resx">
+      <DependentUpon>Base.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dgc.resx">
       <DependentUpon>Dgc.cs</DependentUpon>
     </EmbeddedResource>
