@@ -1,6 +1,6 @@
-﻿namespace MyTest.Common
+﻿namespace MyTest.gongxu
 {
-    partial class Base
+    partial class LiuzhuanLable
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // Base
+            // LiuzhuanLable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(538, 337);
-            this.Name = "Base";
-            this.Text = "Base";
+            this.ClientSize = new System.Drawing.Size(664, 418);
+            this.Name = "LiuzhuanLable";
+            this.Text = "LiuzhuanLable";
             this.ResumeLayout(false);
 
         }

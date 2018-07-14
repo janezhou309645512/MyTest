@@ -33,14 +33,26 @@
             this.人员信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.机台信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.包装信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.出入库明细ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.库存查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.排产计划ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.计划查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.模切业务ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.开单ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.收货ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.转出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.报表ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.包装业务ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.标签打印ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.出入库明细ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.库存查询ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.工具ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,8 +60,13 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.基础资料ToolStripMenuItem,
+            this.toolStripMenuItem5,
+            this.toolStripMenuItem1,
             this.模切业务ToolStripMenuItem1,
             this.包装业务ToolStripMenuItem,
+            this.toolStripMenuItem3,
+            this.toolStripMenuItem2,
+            this.toolStripMenuItem4,
             this.设置ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -87,33 +104,79 @@
             this.包装信息ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.包装信息ToolStripMenuItem.Text = "包装信息";
             // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem6,
+            this.出入库明细ToolStripMenuItem,
+            this.库存查询ToolStripMenuItem});
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(44, 21);
+            this.toolStripMenuItem5.Text = "原材";
+            // 
+            // toolStripMenuItem6
+            // 
+            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(136, 22);
+            this.toolStripMenuItem6.Text = "材料信息";
+            // 
+            // 出入库明细ToolStripMenuItem
+            // 
+            this.出入库明细ToolStripMenuItem.Name = "出入库明细ToolStripMenuItem";
+            this.出入库明细ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.出入库明细ToolStripMenuItem.Text = "出入库明细";
+            // 
+            // 库存查询ToolStripMenuItem
+            // 
+            this.库存查询ToolStripMenuItem.Name = "库存查询ToolStripMenuItem";
+            this.库存查询ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.库存查询ToolStripMenuItem.Text = "库存查询";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.排产计划ToolStripMenuItem,
+            this.计划查询ToolStripMenuItem});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(44, 21);
+            this.toolStripMenuItem1.Text = "开单";
+            // 
+            // 排产计划ToolStripMenuItem
+            // 
+            this.排产计划ToolStripMenuItem.Name = "排产计划ToolStripMenuItem";
+            this.排产计划ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.排产计划ToolStripMenuItem.Text = "排产计划";
+            this.排产计划ToolStripMenuItem.Click += new System.EventHandler(this.排产计划ToolStripMenuItem_Click);
+            // 
+            // 计划查询ToolStripMenuItem
+            // 
+            this.计划查询ToolStripMenuItem.Name = "计划查询ToolStripMenuItem";
+            this.计划查询ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.计划查询ToolStripMenuItem.Text = "计划查询";
+            // 
             // 模切业务ToolStripMenuItem1
             // 
             this.模切业务ToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.开单ToolStripMenuItem,
-            this.转出ToolStripMenuItem,
-            this.报表ToolStripMenuItem});
+            this.收货ToolStripMenuItem,
+            this.toolStripMenuItem7,
+            this.转出ToolStripMenuItem});
             this.模切业务ToolStripMenuItem1.Name = "模切业务ToolStripMenuItem1";
             this.模切业务ToolStripMenuItem1.Size = new System.Drawing.Size(68, 21);
             this.模切业务ToolStripMenuItem1.Text = "工序转出";
             // 
-            // 开单ToolStripMenuItem
+            // 收货ToolStripMenuItem
             // 
-            this.开单ToolStripMenuItem.Name = "开单ToolStripMenuItem";
-            this.开单ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
-            this.开单ToolStripMenuItem.Text = "收货";
+            this.收货ToolStripMenuItem.Name = "收货ToolStripMenuItem";
+            this.收货ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.收货ToolStripMenuItem.Text = "收货";
+            this.收货ToolStripMenuItem.Click += new System.EventHandler(this.收货ToolStripMenuItem_Click_1);
             // 
             // 转出ToolStripMenuItem
             // 
             this.转出ToolStripMenuItem.Name = "转出ToolStripMenuItem";
-            this.转出ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.转出ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.转出ToolStripMenuItem.Text = "转出";
-            // 
-            // 报表ToolStripMenuItem
-            // 
-            this.报表ToolStripMenuItem.Name = "报表ToolStripMenuItem";
-            this.报表ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
-            this.报表ToolStripMenuItem.Text = "报表";
+            this.转出ToolStripMenuItem.Click += new System.EventHandler(this.转出ToolStripMenuItem_Click);
             // 
             // 包装业务ToolStripMenuItem
             // 
@@ -126,9 +189,42 @@
             // 标签打印ToolStripMenuItem
             // 
             this.标签打印ToolStripMenuItem.Name = "标签打印ToolStripMenuItem";
-            this.标签打印ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.标签打印ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.标签打印ToolStripMenuItem.Text = "标签打印";
             this.标签打印ToolStripMenuItem.Click += new System.EventHandler(this.标签打印ToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(38, 21);
+            this.toolStripMenuItem3.Text = "QC";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.出入库明细ToolStripMenuItem1,
+            this.库存查询ToolStripMenuItem1});
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(44, 21);
+            this.toolStripMenuItem2.Text = "成品";
+            // 
+            // 出入库明细ToolStripMenuItem1
+            // 
+            this.出入库明细ToolStripMenuItem1.Name = "出入库明细ToolStripMenuItem1";
+            this.出入库明细ToolStripMenuItem1.Size = new System.Drawing.Size(136, 22);
+            this.出入库明细ToolStripMenuItem1.Text = "出入库明细";
+            // 
+            // 库存查询ToolStripMenuItem1
+            // 
+            this.库存查询ToolStripMenuItem1.Name = "库存查询ToolStripMenuItem1";
+            this.库存查询ToolStripMenuItem1.Size = new System.Drawing.Size(136, 22);
+            this.库存查询ToolStripMenuItem1.Text = "库存查询";
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(44, 21);
+            this.toolStripMenuItem4.Text = "工具";
             // 
             // 设置ToolStripMenuItem
             // 
@@ -141,8 +237,15 @@
             // 工具ToolStripMenuItem
             // 
             this.工具ToolStripMenuItem.Name = "工具ToolStripMenuItem";
-            this.工具ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
-            this.工具ToolStripMenuItem.Text = "工具";
+            this.工具ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.工具ToolStripMenuItem.Text = "权限设置";
+            // 
+            // toolStripMenuItem7
+            // 
+            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem7.Text = "流转标签打印";
+            this.toolStripMenuItem7.Click += new System.EventHandler(this.toolStripMenuItem7_Click);
             // 
             // Form3
             // 
@@ -170,12 +273,24 @@
         private System.Windows.Forms.ToolStripMenuItem 机台信息ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 包装信息ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 模切业务ToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem 开单ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 收货ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 转出ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 报表ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 包装业务ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 设置ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 工具ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 标签打印ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 排产计划ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 计划查询ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
+        private System.Windows.Forms.ToolStripMenuItem 出入库明细ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 库存查询ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 出入库明细ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 库存查询ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
     }
 }

@@ -79,6 +79,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -124,11 +125,29 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="gongxu\LiuzhuanLable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gongxu\LiuzhuanLable.Designer.cs">
+      <DependentUpon>LiuzhuanLable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gongxu\Shouhuo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gongxu\Shouhuo.Designer.cs">
+      <DependentUpon>Shouhuo.cs</DependentUpon>
+    </Compile>
     <Compile Include="ImportExcel.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ImportExcel.Designer.cs">
       <DependentUpon>ImportExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kaidan\Plan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kaidan\Plan.Designer.cs">
+      <DependentUpon>Plan.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -161,8 +180,17 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="gongxu\LiuzhuanLable.resx">
+      <DependentUpon>LiuzhuanLable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gongxu\Shouhuo.resx">
+      <DependentUpon>Shouhuo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ImportExcel.resx">
       <DependentUpon>ImportExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kaidan\Plan.resx">
+      <DependentUpon>Plan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>

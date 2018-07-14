@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyTest.kaidan;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,7 @@ namespace MyTest
     {
         private Form1 f1;
         private Form2 f2;
+        private Plan plan;
         private ImportExcel ie;
 
         public Form3()
@@ -66,6 +68,34 @@ namespace MyTest
             f2.Show();
 
 
+        }
+
+        private void 排产计划ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            plan = new Plan();
+            plan.MdiParent = this;
+            
+            plan.Show();
+        }
+
+
+        private void 转出ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 收货ToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            
+
+
+
+
+        }
+
+        private void toolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            //
         }
     }
 }
